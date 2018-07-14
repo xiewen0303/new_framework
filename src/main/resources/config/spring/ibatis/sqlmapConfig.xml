@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<!-- 服务器信息 -->
+	<sqlMap resource="com/junyou/bus/serverinfo/sqlmap/ServerInfo.xml"/>
+	<!-- 角色信息 -->
+ 	<sqlMap resource="com/junyou/bus/role/sqlmap/UserRole.xml"/>
+ 	<sqlMap resource="com/junyou/bus/account/sqlmap/RoleAccount.xml"/>
+	<!-- 充值 -->
+ 	<sqlMap resource="com/junyou/bus/recharge/sqlmap/Recharge.xml"/>
+ 	<!-- 场景 -->
+	<sqlMap resource="com/junyou/bus/rolestage/sqlmap/RoleStage.xml"/>
+ 	<!-- 背包 -->
+	<sqlMap resource="com/junyou/bus/bag/sqlmap/RoleItem.xml"/>
+	
+	
+
+	<!-- 角色设置（快捷键等） -->
+	<sqlMap resource="com/junyou/bus/setting/sqlmap/RoleSetting.xml"/>
+	<!-- 角色业务数据 -->
+	<sqlMap resource="com/junyou/bus/rolebusiness/sqlmap/RoleBusinessInfo.xml"/>
+	
+ 	<!-- 禁言封号 -->
+	<sqlMap resource="com/junyou/bus/jinfeng/sqlmap/FengHao.xml"/>
+	<sqlMap resource="com/junyou/bus/jinfeng/sqlmap/FengIp.xml"/>
+	<sqlMap resource="com/junyou/bus/jinfeng/sqlmap/JinYan.xml"/>
+	 
+	<!-- 邮件 -->
+	<sqlMap resource="com/junyou/bus/email/sqlmap/EmailRelation.xml"/>
+	<sqlMap resource="com/junyou/public_/email/sqlmap/Email.xml"/>
+	
+	<!-- VIP -->
+	<sqlMap resource="com/junyou/bus/vip/sqlmap/RoleVipInfo.xml"/>
+ 
+	<!-- 游戏进度 -->
+	<sqlMap resource="com/junyou/public_/jindu/sqlmap/GameJindu.xml"/>
+</sqlMapConfig>

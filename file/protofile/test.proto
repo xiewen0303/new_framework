@@ -1,0 +1,34 @@
+syntax = "proto2";
+option java_package = "com.message";
+option java_outer_classname = "MessageInfo";
+
+
+ message Login_C {
+  optional string accountId=1;	//用户id
+  optional string serverId=2; 	//服务器Id
+  optional string encrypt=3;	//加密验证数据
+  optional bool isChenMi =4;	//是否沉迷
+}
+
+message Login_S{
+  optional Code code=1;//错误反馈
+  optional RoleVO role=2;
+  optional int64 serverTime= 3; 	//服务器开服时间
+  optional int64 nowTime= 4; 		//服务器当前时间
+  optional int64 mergeServerTime= 5;//合服时间
+  optional int32 zoneOffMinute = 6; //服务器时区偏移量(单位：分钟)
+}
+
+
+ message RoleVO{
+   optional int64 guid = 1;//角色id
+   optional string name = 2;//角色名
+   optional int32 level = 3;//角色等级
+   optional int64 zhanli = 4;//角色战力
+}
+
+
+message Code{
+  optional int32 code=1;	//错误标识
+  repeated string params=2;	//附加参数
+}
